@@ -103,7 +103,7 @@ Here is a simple diagram summarizing the journey:
 
 
 ```mermaid
-flowchart TD
+graph TD
   A[Client (browser)]
   B[Local DNS Server]
   C[Firewall / NAT]
@@ -113,20 +113,20 @@ flowchart TD
   G[Application Server]
   H[Database]
 
-  A -->|DNS query| B
-  B -->|IP address| A
+  A -- DNS query --> B
+  B -- IP address --> A
 
-  A -->|HTTPS request (TLS)| C
-  C -->|Allow/inspect| D
-  D -->|Distribute request| E
+  A -- HTTPS request (TLS) --> C
+  C -- Allow/inspect --> D
+  D -- Distribute request --> E
   E --> F
 
-  F -->|Process request| G
-  G -->|Queries database| H
-  H -->|Results| G
+  F -- Process request --> G
+  G -- Queries database --> H
+  H -- Results --> G
 
-  G -->|HTML/JSON| F
-  F -->|Encrypted response (TLS)| A
+  G -- HTML/JSON --> F
+  F -- Encrypted response (TLS) --> A
 ```
 
 ---
