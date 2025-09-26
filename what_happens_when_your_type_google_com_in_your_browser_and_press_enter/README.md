@@ -104,11 +104,11 @@ Here is a simple diagram summarizing the journey:
 
 ```mermaid
 graph TD
-  A[Client (browser)]
+  A[Client]
   B[Local DNS Server]
   C[Firewall / NAT]
   D[Load Balancer]
-  E[Web Server (HTTPS port 443)]
+  E[Web Server HTTPS 443]
   F[TLS termination]
   G[Application Server]
   H[Database]
@@ -128,6 +128,8 @@ graph TD
   G -- HTML/JSON --> F
   F -- Encrypted response (TLS) --> A
 ```
+
+
 
 ---
 
