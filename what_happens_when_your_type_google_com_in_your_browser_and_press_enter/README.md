@@ -141,4 +141,4 @@ Understanding this flow demonstrates strong knowledge of networking and web tech
 
 Next time you open your browser, you’ll know the incredible journey hidden behind a single keystroke.
  
- Read article on [Medium]()
+ Read article on [Medium](https://medium.com/@b.lonqueu98/what-happens-when-you-type-https-www-google-com-and-press-enter-0a93d4d2ff97)
